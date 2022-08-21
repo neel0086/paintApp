@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+            <span class="btn active">
+                <img src="./images/brush.png" alt="">
+            </span>
+            <span id="fillColor" class="btn">
+                <input type="color" id="picker" style="display: none" onchange="updateColor()">
+                <label for="picker"><img src="./images/color_picker.png" alt=""></label>
+                
+            </span>
+    </div>
+    <h1 class="heading">PAINT</h1>
+    <div class="container">
+        
+        <div class="screen">
+            <a id="download" download="image.png">
+                <button onclick="to_image()" class="button-54" role="button">Save Painting</button>
+            </a>
+            <button class="button-54" role="button" onclick="refresh()">Clear</button>
+            
+        </div>
+    </div>
+    <canvas id='draw' width="800" height="800" style="margin-left: -398.625px; margin-top: -280.778px;"></canvas>
+</body>
+    <script src="script.js">
+        
+    </script>
+</html>
